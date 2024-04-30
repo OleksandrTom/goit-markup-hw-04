@@ -120,14 +120,20 @@ button {
 }
 /* ===Hero Styles===============*/
 .hero-section {
-    background-color: #2e2f42;
-        max-width: 1440px;
-        margin-left: auto;
-        margin-right: auto;
-        padding-top: 188px;
-        padding-bottom: 188px;
+background: #2e2f42;
+    background-image: linear-gradient(to bottom,
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+        url(../images/people-office.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 188px 0;
 }
-
+    
 .main-title {
      font-weight: 700;
     font-size: 56px;
@@ -206,7 +212,17 @@ width: calc((100% - 72px) /4);
         margin-bottom: 8px;
 }
 
-
+.benefits-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    padding: 24px 100px;
+    margin-bottom: 8px;
+    background: #f4f4fd;
+    height: 112px;
+}
 
 .benefits-list-text {
     font-weight: 400;
