@@ -118,6 +118,22 @@ button {
         letter-spacing: 0.02em;
         color: #434455;
 }
+.current {
+    position: relative;
+    color: #404bbf;
+}
+
+.current::after {
+    content: "";
+    position: absolute;
+    background-color: #404bbf;
+    border-radius: 2px;
+    width: 100%;
+    height: 4px;
+    display: block;
+    left: 0;
+    bottom: -1px;
+}
 /* ===Hero Styles===============*/
 .hero-section {
 background: #2e2f42;
@@ -279,6 +295,41 @@ font-weight: 500;
     color: #434455;
 
 }
+.team-social {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    margin: 8px 16px;
+}
+
+.team-social-list {
+    display: flex;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    margin: 0 auto;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team-social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-radius: 50%;
+    background-color: #4d5ae5;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.team-social-link:hover,
+.team-social-link:focus {
+    background-color: #404bbf;
+}
+
+.team-social-icon {
+    fill: #f4f4fd;
+}
 
 /* ============ OUR PORTFOLIO STYLES ============ */
 .portfolio-text {
@@ -357,4 +408,60 @@ font-weight: 500;
         letter-spacing: 0.02em;
         color: #f4f4fd;
         width: 264px;
+}
+.footer-social-list {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-link-icon:hover,
+.footer-link-icon:focus {
+    background-color: #31d0aa;
+}
+
+.footer-link-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-social-text {
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+}
+
+.footer-container {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer-logo-text {
+    margin-right: 120px;
+}
+
+.footer-icon {
+    fill: #f4f4fd;
 }
